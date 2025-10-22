@@ -1,0 +1,109 @@
+<!-- File: index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <!-- TODO 1: Add a favicon and a title -->
+        <link rel="icon" type="image/svg+xml" href="assets/Grid-2x2.svg" />
+        <title>My Personal Website – COMP4900 Assessment</title>
+    </head>
+    <body>
+        <nav>
+            <!-- TODO 2: Add an logo and a name -->
+            <a href="./" id="logo">
+                <img src="assets/Grid-2x2.svg" alt="My logo" title="Home" />
+                Mok Tsz Lung
+            </a>
+
+            <button id="anchor-list-trigger" onclick="toggleAnchorList()">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentcolor">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M 3 6 h 18 M 3 12 h 18 M 3 18 h 18" />
+                </svg>
+            </button>
+
+            <!-- TODO 3: Add the URL to your GitHub Pages repository -->
+            <ul id="anchor-list">
+                <li><a href="https://github.com/tlmok0330/tlmok0330.github.io" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+
+        <div id="section-container">
+            <section id="hero">
+                <header>
+                    <h1>Hii! I’m Mok Tsz Lung</h1>
+                    <p>Dynamic and ambitious individual with a passion for finance and business, coupled with a keen interest in computer science.
+                        Eager to blend the analytical skills of the financial world with the innovation of technology to excel in a diverse and rapidly evolving
+                        professional landscape. Striving to leverage the best of both domains to carve a unique and impactful career path.</p>
+                </header>
+                <img id="avatar" src="assets/avatar.png" alt="Profile picture" />
+            </section>
+
+            <hr />
+
+            <section id="about">
+                <h2>About</h2>
+                <!-- TODO 5: A short paragraph about you -->
+                <p>I am a freshman at HKUST, pursuing a dual degree in Computer Science and Business Administration.
+        I enjoy transforming simple code into clear, functional layouts and learning new frontend techniques.
+        Through COMP 4900, I have gained a deeper understanding of HTML structure, CSS styling, and 
+        how to host responsive websites using GitHub Pages.</p>
+            </section>
+
+            <hr />
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <!-- TODO 6: Elaborate more skills using HTML elements -->
+                <div id="skill-set">
+                    <div class="skill">
+                        <h3>HTML & CSS</h3>
+                        <p>
+                            Capable of building structured, semantic, and responsive webpages using HTML5 and CSS3. 
+                            Familiar with principles of modern front‑end design, accessibility, and GitHub Pages deployment.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>Python</h3>
+                        <p>
+                            Experienced in writing efficient Python programs with a solid foundation in data processing 
+                            and visualization using libraries such as <b>NumPy</b> and <b>Matplotlib</b>. 
+                            Completed coursework in Python programming and hands‑on exercises in algorithmic problems.
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <h3>C++ - Competitive Programming</h3>
+                        <p>
+                            Experienced in solving complex algorithmic problems through platforms like <b>Codeforces</b>. 
+                            Strong understanding of <b>data structures</b> (segment trees, graphs, heaps) 
+                            and <b>algorithms</b> including dynamic programming, shortest path, and graph traversal. 
+                            Enjoys writing optimized solutions under time constraints.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <hr />
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <!-- TODO 7: Put your HKUST email without the domain -->
+                <p>tlmok</p>
+            </section>
+        </div>
+
+        <footer>An assessment for COMP 4900 (Fall 2025)</footer>
+
+        <script>
+            function toggleAnchorList() {
+                const anchor_list = document.getElementById("anchor-list");
+                if (window.getComputedStyle(anchor_list).getPropertyValue("--show-anchor-list") == "none") {
+                    anchor_list.style.setProperty("--show-anchor-list", "block");
+                }
+                else {
+                    anchor_list.style.setProperty("--show-anchor-list", "none");
+                }
+            }
+        </script>
+    </body>
+</html>
