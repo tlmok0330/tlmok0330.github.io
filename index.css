@@ -186,7 +186,8 @@ section {
 #avatar {
     width: 20%;
     aspect-ratio: 1/1;
-    /*border-radius: 50%;*/
+    object-fit: cover; 
+    object-position: center;
 }
 
 /* 5b. About section */
